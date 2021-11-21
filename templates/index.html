@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+</head>
+<center>
+<body>
+<div style = "width: 300px;	height: 80px;
+    background: #9370DB;
+    outline: 2px solid #000;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    vertical-align: middle; horizontal-align: middle ;" >
+    <h1><pre> Выберите беседу </pre></h1>
+</div>
+    <h4> Здравствуйте{% if current_user.is_authenticated %}, {{current_user.username}}.{% else %} .{% endif %} Введите идиентификатор беседы и желаемое имя в ней.</h4>
+    <form action="/chat">
+        <div>
+            <label> Введите имя : </label>
+            <input placeholder="оставить логин" style="width: 15%" type = "text" name  = "username" >
+        </div>
+        <br>
+        <div>
+            <label> Введите номер беседы &nbsp; :   </label>
+            <input style="width: 10%" type = "text" name  = "room" >
+        </div>
+        <br>
+        <button style="margin-left: 11.5rem ; background: #FFFACD ;width: 150px ;height :40px" type  = "submit"> Посетить </button>
+        <br>
+    </form>
+    <form action="/logout">
+        <br>
+        <button style="margin-left: 11.5rem ; background: #FFFACD ; width: 150px ;height :40px" type="submit">Выйти</button>
+    </form>
+</body>
+</center>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Клаб чат )))</title>
+</head>
+<style>
+   div {
+   vertical-align: middle; horizontal-align: middle ;
+    width: 300px;	height: 80px; /* Размеры */
+    background: #9370DB; /* Цвет фона */
+    outline: 2px solid #000; /* Чёрная рамка */
+    border: 3px solid #fff; /* Белая рамка */
+    border-radius: 10px; /* Радиус скругления */
+   }
+ </style>
+<center>
+<body>
+<div>
+<h1><pre>  Вход  </pre></h1>
+</div>
+<h3>{{message}}</h3>
+<form method="post"  action="/login">
+    <label>  Логин &nbsp;:&nbsp;</label>
+    <input style="width: 15%" type ="text" name  = "username">
+    <br>
+    <br>
+    <label> Пароль :</label>
+    <input style="width: 15%" type = "password" name = "password">
+    <br>
+    <br>
+    <button style="margin-left: 9.5rem ; background: #FFFACD ; width: 150px ; height :40px" type  = 'submit'> Войти </button>
+    <br>
+</form>
+
+<form method="post" action="/sign_up">
+    <br>
+    <button style="margin-left: 9.5rem ; background: #FFFACD ; width: 150px ; height :40px" type  = 'submit'> Зарегистрироваться </button>
+</form>
+
+</body>
+</center>
+</html>

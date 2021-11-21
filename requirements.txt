@@ -1,0 +1,12 @@
+flask~=2.0.2
+flask-socketio
+Flask-SocketIO==4.3.1
+python-engineio==3.13.2
+python-socketio==4.6.0
+pymongo~=3.12.1
+flask_login==0.5.0
+pymongo
+pymongo[srv]
+gevent
+gevent-websocket
+eventlet==0.30.2
